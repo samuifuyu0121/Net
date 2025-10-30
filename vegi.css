@@ -1,0 +1,238 @@
+body
+{
+    background-color: #EDF2C5; /*底色*/
+    margin: 0;
+    font-family: "Arial Black", sans-serif;
+}
+/* 整體容器 */
+.container {
+  width: 1260px;
+  margin: 0 auto; /* ✅ 讓整頁置中 */
+  background-color: #EDF2C5;
+}
+header
+{
+    width: 940px;                /* ✅ 內部實際內容寬度 */
+    margin: 0 auto;              /* ✅ 讓內容在 1260px 中置中 */
+    display: flex;
+    justify-content: space-between; /* ✅ 左右兩邊分開 */
+    align-items: center;            /* ✅ 垂直置中 */
+    padding-top: 53px;             /* ✅ 上方間距 */
+}
+header h1
+{
+    font-family: "Arial Black", sans-serif;
+    width: 271px;
+    height: 42px;
+    font-size: 36px;
+    color: #778A50;
+    margin: 0;               /* ✅ 拿掉預設外距 */
+    padding: 0;
+    line-height: 42px;
+}
+.right
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;  /* ✅ 垂直置中，讓 icon + login 對齊 Vegetables */
+}
+.pic {
+    display: flex;         /* 讓圖片橫向排列 */
+    gap: 10px;             /* ✅ 圖片間距 10px */
+    align-items: center;   /* 讓它跟 LOGIN 高度對齊 */
+}
+
+.pic img {
+    width: 25px;           /* ✅ 寬 25px */
+    height: 25px;          /* ✅ 高 25px */
+    display: block;
+    object-fit: contain;   /* 防止圖片變形 */
+}
+.divider {
+    width: 1px;             /* ✅ 線的寬度 */
+    height: 25px;           /* ✅ 線的高度 */
+    background-color: #778A50; /* ✅ 線的顏色 */
+}
+.login1
+{
+    display: inline-block;
+    border: 1px solid #778A50;          /* ✅ 外框顏色與粗細 */
+    padding: 5px 12px;                  /* ✅ 內距，讓文字與邊線有空間 */
+    border-radius: 4px;                 /* ✅ 邊角圓弧，可視需要 */
+    background-color: transparent;      /* ✅ 保持透明（可改成底色） */
+    text-decoration: none ;              /* ✅ 不要超連結底線 */
+    font-family: "Arial Bold", sans-serif;
+}
+.login2
+{
+    display: inline-block;
+    
+    border: 1px solid #778A50;          /* ✅ 外框顏色與粗細 */
+    padding: 5px 12px;                  /* ✅ 內距，讓文字與邊線有空間 */
+    border-radius: 4px;                 /* ✅ 邊角圓弧，可視需要 */
+    background-color: transparent;      /* ✅ 保持透明（可改成底色） */
+    text-decoration: none;
+    font-family: "Arial Bold", sans-serif;
+}
+.login1 a,.login2 a
+{
+    text-decoration: none;
+    color: #778A50;
+}
+nav {
+    background-color: #778A50; /* ✅ 綠色底 */
+    height: 44px;              /* ✅ 高度 */
+    width: 940px;
+    display: flex;
+    align-items: center;       /* 讓字垂直置中 */
+    justify-content: flex-start;   /* 可讓整組導覽置中 */
+    margin: 8px auto 0 auto;
+    border-radius: 4px;                 /* ✅ 邊角圓弧，可視需要 */
+}
+nav ul {
+    display: flex;
+    gap: 60px;                 /* 各選項間距 */
+    list-style: none;          /* 拿掉前面的圓點 */
+    margin: 0;
+    padding: 0;
+    font-family: "Arial Black", sans-serif;
+    font-size: 16px;
+    margin-left: 30px;
+}
+nav a
+{
+    text-decoration: none;
+    color: #EDF2C5;
+}
+.pump {
+    display: flex;             /* 用 flex 容器 */
+    justify-content: center;   /* ✅ 水平置中 */
+    margin: 20px auto 0 auto;         /* ✅ 上下留白+整組置中 */
+    width: 944px;              /* ✅ 設定固定寬度（同整體版心） */
+  
+}
+.pump img 
+{
+    max-width: 100%;           /* 圖片不超出容器寬 */
+    height: auto;              /* 保持比例 */
+}
+footer 
+{
+    display: flex;                   /* 讓左右欄橫向排列 */
+    justify-content: space-between;  /* 左右分開 */
+    width: 940px;
+    margin: 30px auto;
+    align-items: flex-start;         /* ✅ 讓上方對齊，而不是垂直置中 */
+}
+
+/* 左欄（Vegetables + 圖片） */
+.reading
+{
+    width: 445px;
+}
+
+.reading h1 {
+    background-color: #778A50;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 4px;
+    color: #EDF2C5;
+    font-size: 16px;
+    font-family: "Arial Black", sans-serif;
+    margin: 0 0 15px 0; /* 與圖片留距 */
+}
+.reading h1 span { margin-left: 30px; }
+
+.pic1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic1 img {
+    width: 140px;
+    height: auto;
+    display: block;
+}
+
+/* 右欄（Contact + 文字） */
+.reading2 {
+  width: 445px;
+}
+
+/* 右欄標題：維持靠右，文字右縮 30px 的做法不變 */
+.reading2 h2 {
+  background-color: #778A50;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 4px;
+  color: #EDF2C5;
+  font-size: 16px;
+  font-family: "Arial Black", sans-serif;
+  margin: 0 0 15px 0;  /* 綠條與內容盒之間的距離 */
+}
+.reading2 h2 span { margin-left: 30px; }
+
+/* ✅ 只把「內容盒」往下推、上色、圓角 */
+.word2 {
+  background-color: #F7FBDA;
+  width: 445px;
+  height: 140px;              /* ✅ 改回固定高度 */
+  border-radius: 4px;
+  padding: 16px 15px 0;       /* 內距依舊存在 */
+  box-sizing: border-box;     /* ✅ 加這行！讓 padding 不會撐大外尺寸 */
+}
+
+/* 內容文字 */
+.word p {
+  margin: 0;
+  font-family: "ArialMT Regular", sans-serif;
+  font-size: 12px;
+  color: #7D7D7D;
+}
+
+/* 中間分隔線 */
+.divid {
+  width: 414px;
+  height: 1px;
+  background-color: #7D7D7D;
+  margin: 16px 0 16PX 0;
+  display: block;
+}
+.mail p {
+  margin: 0;
+  font-family: "ArialMT Regular", sans-serif;
+  font-size: 12px;
+  color: #7D7D7D;
+}
+.phone p {
+  margin: 0;
+  font-family: "ArialMT Regular", sans-serif;
+  font-size: 12px;
+  color: #7D7D7D;
+  margin: 8px 0 16PX 0;
+}
+.foot {
+  background-color: #778A50;
+  width: 940px;
+  height: 60px;
+  display: flex;                  /* ✅ 加上這行！啟用 flex */
+  align-items: center;            /* ✅ 垂直置中 */
+  justify-content: center;    /* ✅ 靠左（如果要水平置中改成 center） */
+  margin: 8px auto 0 auto;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.foot p {
+  color: #EDF2C5;
+  font-size: 12px;
+  font-family: "ArialMT Regular", sans-serif;
+  margin-left: 30px;              /* ✅ 讓文字離左邊一點 */
+  margin: 0;                      /* ✅ 移除預設外距，避免偏掉 */
+}
